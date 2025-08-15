@@ -2,6 +2,7 @@ import http from 'http';
 import fs from 'fs';
 import path from 'path';
 
+
 const PORT = 3000;
 
 // Funktion för att servera en HTML-fil
@@ -20,7 +21,7 @@ function serveHtmlFile(res: http.ServerResponse, filePath: string, statusCode = 
 const server = http.createServer((req, res) => {
   if (!req.url) {
     res.writeHead(400);
-    res.end('Bad Request');
+    res.end('Bad Request'); 
     return;
   }
 
