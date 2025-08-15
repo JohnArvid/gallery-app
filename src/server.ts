@@ -4,6 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import serveHtmlFile from './serveHtmlFile';
+
 const PORT = 3000;
 
 // __dirname ersättning i ESM
